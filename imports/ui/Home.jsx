@@ -45,7 +45,7 @@ const Home = props => {
         <br />
         <h2 className="subtitle">Spent more time living...</h2>
         <h2 className="othertitle">... And less time organizing</h2>
-        <div className="row">
+        <div className="row first-row">
           <div className="col-lg-4 col-x1-4 images">
             <img
               src={calendar}
