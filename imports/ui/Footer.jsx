@@ -9,7 +9,6 @@ const Footer = () => {
         <MDBRow>
           <MDBCol md="6"></MDBCol>
           <MDBCol md="6">
-            <h5 className="title"></h5>
             <ul></ul>
           </MDBCol>
         </MDBRow>

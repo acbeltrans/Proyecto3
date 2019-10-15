@@ -8,15 +8,16 @@ const Event = props => {
   };
 
   return (
-    <li>
-      <span className="title">{props.event.title}</span>
-      <span className="start">{props.event.start}</span>
-      <span className="end">{props.event.end}</span>
-
-      <button className="btn btn-danger delete" onClick={deleteThisEvent}>
-        &times;
-      </button>
-    </li>
+    <ul>
+      <li>
+        <span className="title">{props.event.title}</span>
+        <span className="start">{props.event.start}</span>
+        <span className="end">{props.event.end}</span>
+        <button className="btn btn-danger delete" onClick={deleteThisEvent}>
+          &times;
+        </button>
+      </li>
+    </ul>
   );
 };
 

@@ -21,7 +21,9 @@ const Home = props => {
         <h1 className="mainTitle">Welcome {props.currentUser.username}</h1>
         <HomeCalendar userName={props.currentUser.username}></HomeCalendar>
         <div className="float-left ml-3">
-          <h3 className="otherMainTitle">Don't forgget what is in your shopping list</h3>
+          <h3 className="otherMainTitle">
+            Don't forgget what is in your shopping list
+          </h3>
           <HomeItems></HomeItems>
         </div>
       </div>
@@ -37,11 +39,11 @@ const Home = props => {
         <h1 className="title2">
           <span className="some">Two One</span>
         </h1>
-        <h1 className="title">
-          Because spending time with your
-        </h1>
+        <h1 className="title">Because spending time with your</h1>
         <br />
-        <h1 className="title1"><span className="some">family</span> is worth every second</h1>
+        <h1 className="title1">
+          <span className="some">family</span> is worth every second
+        </h1>
         <br />
         <h2 className="subtitle">Spent more time living...</h2>
         <h2 className="othertitle">... And less time organizing</h2>

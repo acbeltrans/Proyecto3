@@ -24,31 +24,37 @@ const Item = props => {
   };
 
   return (
-    <li className={itemClassName}>
-      <div class="row">
-        <div class="col-0">
-          <input
-            className="checkbox"
-            type="checkbox"
-            readOnly
-            checked={!!props.item.checked}
-            onClick={toggleChecked}
-            onKeyPress={onKeyPressChecked}
-          />
+    <ul>
+      <li className={itemClassName}>
+        <div className="row">
+          <div className="col-0">
+            <input
+              className="checkbox"
+              type="checkbox"
+              readOnly
+              checked={!!props.item.checked}
+              onClick={toggleChecked}
+              onKeyPress={onKeyPressChecked}
+            />
+          </div>
+          <div className="col-3">
+            <span className="text">{props.item.text}</span>
+          </div>
+          <div className="col-6">
+            <span className="text"></span>
+          </div>
+          <div className="col-2">
+            <button
+              className="delete btn"
+              onClick={deleteThisItem}
+              aria-label="Close"
+            >
+              &times;
+            </button>
+          </div>
         </div>
-        <div class="col-3">
-          <span className="text">{props.item.text}</span>
-        </div>
-        <div class="col-6">
-          <span className="text"></span>
-        </div>
-        <div class="col-2">
-          <button className="delete" onClick={deleteThisItem}>
-            &times;
-          </button>
-        </div>
-      </div>
-    </li>
+      </li>
+    </ul>
   );
 };
 

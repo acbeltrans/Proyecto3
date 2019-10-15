@@ -31,7 +31,6 @@ const ShoppingList = props => {
     <div className="container containerSL">
       <header>
         <h1 className="titleShopping">Shopping List</h1>
-
         <form className="new-item" onSubmit={handleSubmit}>
           <input
             onChange={onChangeText}
@@ -41,7 +40,6 @@ const ShoppingList = props => {
           />
         </form>
       </header>
-
       <ul className="list">{renderItems}</ul>
     </div>
   );
